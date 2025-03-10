@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    text-align: right;       
+    top: 0;                
+    left: 0;               
+    width: 100%;           
+    background-color: #333;
+    color: white;          
+    padding: 10px 20px;    
+    z-index: 1000;         
+}
+
+nav a {
+    color: white;          
+    text-decoration: none; 
+    padding: 10px 15px;    
+    margin: 0 10px;       
+    font-size: 1.2rem;    
+}
+
+nav a:hover {
+    background-color: #555; 
+    border-radius: 5px;      
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.card h3 {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    background: radial-gradient(circle, #121A29, #0a0f1d, #000000); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    background-color: #ff6347; 
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e55347;
+}
