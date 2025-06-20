@@ -1,9 +1,143 @@
-<section id="about">
-    <h2>About Me</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Me | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+    </style>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about">
     <div class="container">
-        <div class="card">
-            <h3>Brief Introduction</h3>
-            <p>Write a short bio about yourself. Who are you? What are your skills? What do you do?</p>
-        </div>
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>Hello! I’m [Your Name], a passionate web developer with experience in creating user-friendly websites and applications.</p>
+        <p>I specialize in front-end development, and my skills include HTML, CSS, JavaScript, and modern frameworks like React.</p>
+        <button id="showQuoteButton">Click for a Fun Fact</button>
+        <p id="funFact" style="display: none;">I love playing guitar and composing my own music in my free time!</p>
+      </div>
+
+      <div class="about-image">
+        <img src="your-photo.jpg" alt="Your photo" />
+      </div>
     </div>
-</section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

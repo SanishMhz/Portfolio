@@ -22,9 +22,10 @@ body {
 /* Header */
 .header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 500px;
   align-items: center;
-  padding: 2rem;
+  /* padding: 10px; */
   position: absolute;
   top: 0;
   width: 100%;
@@ -35,6 +36,19 @@ body {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
+
+img{
+  width: 80px;
+  aspect-ratio: 2/2;
+}
+
+}
+
+.container .name span{
+  position: relative;
+  top: 10px;
+  right: 30px;
+  font-size: 1.5rem;
 }
 
 .circle-logo {
@@ -94,7 +108,8 @@ body {
 .batman {
   position: relative;
   z-index: 2;
-  max-height: 150%;
+  max-height: 180%;
+  left: 20px;
 }
 
 .circle {
@@ -105,6 +120,7 @@ body {
   border: 16px solid #E40037;
   z-index: 1;
   box-shadow: 0 0 40px #E40037;
+  bottom: 100px;
 }
 
 /* Footer */
@@ -146,14 +162,20 @@ body {
   margin-left: 16px;
 }
 
-.footer .socials img {
-  height: 20px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+.footer .socials i {
+  font-size: 1.5rem;
 }
 
 .footer .socials img:hover {
   transform: scale(1.2);
+}
+
+.footer .socials > :nth-child(even) {
+  color: white;
+}
+
+.footer .socials > :nth-child(odd) {
+  color: #E40037;
 }
 
 /* Responsive */
